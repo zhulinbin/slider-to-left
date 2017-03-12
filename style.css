@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.slider-container {
+	position: relative;
+	z-index: 3;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5px 8px;
+}
+
+.slider-container div:first-child {
+	position: relative;
+	z-index: 2;
+	height: 60px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background-color: #fff;
+	line-height: 60px;
+	padding: 0 10px;
+}
+
+.slider-container div:last-child {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 60px;
+	display: inline-flex;
+}
+
+.slider-container div:last-child button {
+	height: 100%;
+	width: 50px;
+	background-color: #ef473a;
+	border: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.slider-container div:last-child button:first-child {
+	border-right: 1px solid #fff;
+}
